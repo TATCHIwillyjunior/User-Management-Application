@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ...existing code... -->
+<nav class="navbar navbar-expand fixed-top custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <div class="brand-icon pulse" id="brand-icon">TJ</div>
+      <span class="ms-2 brand-text">MyApp,</span>
+      <span id="welcome-msg" class="welcome-name">Tatchi Junior</span>
+    </a>
+    <div class="ms-auto welcome-container">
+      <span class="welcome-text">Welcome,</span>
+      <span id="welcome-msg" class="welcome-name">Guest</span>
+    </div>
+  </div>
+</nav>
+
+<!-- Add a spacer div to prevent content from hiding under fixed navbar -->
+<div class="navbar-spacer"></div>
+<!-- ...existing code... -->
+
+
+  <div class="header">
+    <h1>Hello, User!</h1>
+  </div>
+
+  <div class="spinner-border d-none" id="spin"></div>
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 justify-content-center" id="users-container">
+      <!-- User cards will be inserted here -->
+    </div>
+  </main>
+
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">EDIT USER</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Here Is the dynanmic content -->
+          <!-- <form>
+            <label for="userName" class="form-label">User's Name</label>
+            <input type="text" id="userName" class="form-control">
+          </form> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary submit-btn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-text">Created with <span id="footer-pulse">❤️</span> by</span>
+        <span class="footer-name" id="footer-name">Guest</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
+
+<!-- <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form> -->
