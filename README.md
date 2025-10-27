@@ -6,8 +6,6 @@ A vanilla JavaScript application for managing user data with real-time updates a
 
 ![User-Management-Application](./Screenshot.png)
 
-![image alt](https://github.com/TATCHIwillyjunior/User-Management-Application/blob/master/Screenshot.png?raw=true)
-
 ## Features
 
 - Fetch & Display Users: Retrieves user data from a REST API and displays them in a card-based layout
